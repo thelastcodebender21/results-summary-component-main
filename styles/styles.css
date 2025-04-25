@@ -5,7 +5,7 @@
 }
 
 html {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body {
@@ -26,14 +26,15 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  border-bottom-left-radius: 36px;
-  border-bottom-right-radius: 36px;
-  gap: 24px;
-  padding: 32px 50px;
-  padding-bottom: 40px;
+  height: 50vh;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  gap: 20px;
+  padding: 2vh 12%;
+  padding-bottom: 3vh;
 }
 .top-result-part .first-line {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   color: hsla(0, 0%, 100%, 0.7);
 }
@@ -43,20 +44,20 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
   padding: 30px;
   border-radius: 50%;
-  width: 50%;
-  height: 50%;
+  width: 45%;
+  height: 45%;
 }
 .top-result-part .purple-circle .score-result {
-  font-size: 50px;
+  font-size: 46px;
   font-weight: 800;
   color: hsl(0, 0%, 100%);
   line-height: 100%;
 }
 .top-result-part .purple-circle h6 {
-  font-size: 18px;
+  font-size: 16px;
   color: hsla(0, 0%, 100%, 0.3);
   line-height: 100%;
 }
@@ -65,16 +66,110 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
 }
 .top-result-part .second-and-third-line .second-line {
   color: hsl(0, 0%, 100%);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.1%;
 }
 .top-result-part .second-and-third-line .third-line {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   color: hsla(0, 0%, 100%, 0.5);
+}
+
+.bottom-summary-part {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 0 10%;
+  height: auto;
+}
+.bottom-summary-part .first-line {
+  font-size: 18px;
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+}
+.bottom-summary-part .summary-points {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 2vh;
+}
+.bottom-summary-part .summary-points h5 {
+  color: hsl(224, 30%, 27%);
+  line-height: 100%;
+}
+.bottom-summary-part .summary-points h5 span {
+  opacity: 0.5;
+}
+.bottom-summary-part .summary-points h4 {
+  font-weight: 700;
+  line-height: 100%;
+  font-size: 16px;
+}
+.bottom-summary-part .summary-points:nth-child(2) {
+  background-color: hsla(0, 100%, 67%, 0.05);
+  border-radius: 8px;
+}
+.bottom-summary-part .summary-points:nth-child(2) h4 {
+  color: hsl(0, 100%, 67%);
+}
+.bottom-summary-part .summary-points:nth-child(3) {
+  background-color: hsla(39, 100%, 56%, 0.05);
+  border-radius: 8px;
+}
+.bottom-summary-part .summary-points:nth-child(3) h4 {
+  color: hsl(39, 100%, 56%);
+}
+.bottom-summary-part .summary-points:nth-child(4) {
+  background-color: hsla(166, 100%, 37%, 0.05);
+}
+.bottom-summary-part .summary-points:nth-child(4) h4 {
+  color: hsl(166, 100%, 37%);
+}
+.bottom-summary-part .summary-points:nth-child(5) {
+  background-color: hsla(234, 85%, 45%, 0.05);
+}
+.bottom-summary-part .summary-points:nth-child(5) h4 {
+  color: hsl(234, 85%, 45%);
+}
+.bottom-summary-part .summary-points .summary-point-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.bottom-summary-part .summary-points h5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
+  width: 100%;
+}
+.bottom-summary-part button {
+  background-color: hsl(224, 30%, 27%);
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  font-size: 18px;
+  padding: 16px;
+  border-radius: 32px;
+  border: none;
+}
+.bottom-summary-part button:hover {
+  background-color: hsl(241, 81%, 54%);
+  transition: 0.3s;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
