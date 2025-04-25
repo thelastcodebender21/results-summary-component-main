@@ -179,3 +179,55 @@ body{
     cursor: pointer;
   }
 }
+
+// Desktop Responsiveness
+
+@media screen and (min-width:880px){
+  body{
+    @include flexCenter(row, center, center);
+    background-color: hsl(221, 100%, 96%);
+  }
+
+  .results-summary-container{
+    @include flexCenter(row, center, center);
+    width: 55%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    height: 50vh;
+
+    .score-result{
+      font-size: 65px;
+    }
+    h6{
+      font-size: 12px !important;
+    }
+    
+    .third-line{
+      font-size: 14px !important;
+    }
+
+    .top-result-part{
+      height: 100%;
+      width: 50%;
+      border-radius: 10%;
+      padding: 0 5%;
+      .purple-circle{
+        width: 60% !important;
+        padding: 0 !important;
+        height: 50% !important;
+      }
+    }
+    .bottom-summary-part{
+      width: 50%;
+      height: 100%;
+      padding: 5%;
+    }
+
+    button{
+      padding: 10px;
+    }
+  }
+  
+}

@@ -172,4 +172,54 @@ body {
   background-color: hsl(241, 81%, 54%);
   transition: 0.3s;
   cursor: pointer;
+}
+
+@media screen and (min-width: 880px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(221, 100%, 96%);
+  }
+  .results-summary-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    height: 50vh;
+  }
+  .results-summary-container .score-result {
+    font-size: 65px;
+  }
+  .results-summary-container h6 {
+    font-size: 12px !important;
+  }
+  .results-summary-container .third-line {
+    font-size: 14px !important;
+  }
+  .results-summary-container .top-result-part {
+    height: 100%;
+    width: 50%;
+    border-radius: 10%;
+    padding: 0 5%;
+  }
+  .results-summary-container .top-result-part .purple-circle {
+    width: 60% !important;
+    padding: 0 !important;
+    height: 50% !important;
+  }
+  .results-summary-container .bottom-summary-part {
+    width: 50%;
+    height: 100%;
+    padding: 5%;
+  }
+  .results-summary-container button {
+    padding: 10px;
+  }
 }/*# sourceMappingURL=styles.css.map */
